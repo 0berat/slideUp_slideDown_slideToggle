@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $(".downBtn").click(function () {      // BU İŞLEMLERİ TEK BUTONDA NASIL YAPABİLİRSİN DENE ? VAL
+               $(".container").slideDown("slow");
+            });
+            $(".upBtn").click(function () {
+                $(".container").slideUp("slow");
+            })
+            $(".toggleBtn").click(function () {
+                $(".container").slideToggle("slow");
+            });
+
+        });
+
+
+
+
+    </script>
+    <style>
+
+        .container {
+            display: none;
+            width: 300px;
+            border: 1px solid crimson;
+            padding: 10px;
+            margin: 10px;
+
+
+        }
+    </style>
+
+</head>
+<body>
+<button class="downBtn">Göster</button>
+<button class="upBtn">gizle</button>
+<button class="toggleBtn">toggle aç kapa</button>
+<div class="container">lorem ipsun yazısı uieauiemlz auiehz auiea
+    uieau faumeilakulimak falanlorem ipsun yazısı uieauiemlz auiehz auiea
+    uieau faumeilakulimak falanlorem ipsun yazısı uieauiemlz auiehz auiea
+    uieau faumeilakulimak falanlorem ipsun yazısı uieauiemlz auiehz auiea
+    uieau faumeilakulimak falanlorem ipsun yazısı uieauiemlz auiehz auiea
+    uieau faumeilakulimak falanlorem ipsun yazısı uieauiemlz auiehz auiea
+    uieau faumeilakulimak falanlorem ipsun yazısı uieauiemlz auiehz auiea
+    uieau faumeilakulimak falanlorem ipsun yazısı uieauiemlz auiehz auiea
+    uieau faumeilakulimak falan </div>
+</body>
+</html>
